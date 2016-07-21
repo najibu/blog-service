@@ -13,6 +13,12 @@ header .logo{
 	float:left;
 }
 
+.alert {
+	position: absolute;
+	z-index: 1;
+	width: 200px;
+}
+
 footer{
 	background:#f4f4f4;
 	height:90px;

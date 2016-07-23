@@ -1,6 +1,6 @@
 feature 'Timeline' do 
 	scenario "A user creates a new post" do
-		visit "/"
+		visit "/posts/new"
 
 		fill_in "Content", with: "Lorem ipsum"
 

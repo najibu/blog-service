@@ -1,2 +1,19 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1><strong>Dobble:</strong> The social network for everyone </h1>
+
+<br><br>
+<div class="row">
+	<div class="col-md-12 col-md-offset-2">
+		<div class="show-post">
+			<%= render template: "posts/new" %>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="show-timeline">
+			<%= render template: "posts/index" %>
+		</div>
+	</div>
+</div>
+

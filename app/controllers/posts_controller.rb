@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
   	respond_to do |format|
   		if @post.save
-  			format.html { redirect_to posts_path, notice: 'Post was successfully created.' }
+  			format.html { redirect_to root_path, notice: 'Post was successfully created.' }
 	  	else
 	  		format.html { render :new }
 	  	end
@@ -22,7 +22,7 @@ class PostsController < ApplicationController
   def destroy
     Post.find(params[:id]).destroy
     respond_to do |format|
-      format.html { redirect_to posts_path, notice: 'Post deleted' } #change to roots_path
+      format.html { redirect_to root_path, notice: 'Post deleted' } #change to roots_path
     end
   end
 

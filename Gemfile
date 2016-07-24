@@ -61,4 +61,5 @@ group :test do
   gem 'rspec-rails'
   gem 'vcr'
   gem 'webmock'
+  gem 'shoulda-matchers', '~> 3.1'
 end

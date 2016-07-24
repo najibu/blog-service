@@ -6,6 +6,6 @@ feature 'Timeline' do
 
 		click_button "Submit"
 
-		expect(page).to have_content("Post has been created")
+		expect(page).to have_text("Post was successfully created.")
 	end
 end

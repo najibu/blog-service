@@ -11,6 +11,9 @@
 					<div class="pointer">
 					<p><%= post.content %></p>
 					</div>
+					<p>
+						<span class="quiet"><small><%= time_ago_in_words(post.created_at).gsub('about','')%> ago</small></span>
+					</p>
 					<div class="pointer-border"></div>
 				</div>
 			</div>

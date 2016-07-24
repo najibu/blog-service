@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
- 
   resources :newsletter_subscriptions, only: [:new, :create]
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'pages#home'
+  root 'pages#home'
 
-   resources :posts
-
-  
+  resources :posts
 end

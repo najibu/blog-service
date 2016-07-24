@@ -1,4 +1,4 @@
-RSpec.configure do 
+RSpec.configure do
   Shoulda::Matchers.configure do |configure|
     configure.integrate do |with|
       # Choose a test framework:

@@ -3,5 +3,5 @@ RSpec.describe Post, type: :model do
 end
 
 RSpec.describe Post, type: :model do
-	it { should validate_length_of(:content).is_at_most(150) }
+  it { should validate_length_of(:content).is_at_most(150) }
 end

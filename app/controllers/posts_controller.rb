@@ -10,19 +10,19 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
 
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to :back, notice: 'Post was successfully created.' }
-      else
-        format.html { render :new }
-      end
+    if @post.save
+      flash[:success] = "Post was successfully created."
+      redirect_to root_path
+    else
+      flash[:danger] = "Post has not been created"
+      render 'new'
     end
   end
 
   def destroy
     Post.find(params[:id]).destroy
     respond_to do |format|
-      format.html { redirect_to root_path, notice: 'Post deleted' } # change to roots_path
+      format.html { redirect_to root_path, notice: 'Post deleted' }
     end
   end
 

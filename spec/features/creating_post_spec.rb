@@ -1,4 +1,4 @@
-feature 'Timeline' do
+feature 'Creating Posts' do
   scenario 'A user creates a new post' do
     visit '/posts/new'
 

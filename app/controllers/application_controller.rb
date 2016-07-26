@@ -13,5 +13,4 @@ class ApplicationController < ActionController::Base
   def new_post
     @posts = Post.all
   end
-
 end

@@ -49,10 +49,10 @@ In order to run the test suite, in development you'll need to rake the migration
 
 ###Running the test suite in Blog service
 
-run: <code>rspec</code>
+run: <code>rspec</code> <br>
 run: <code>rubocop</code>
 
-###To start the serve
+###To start the rails serve
 
 run: <code>rails s</code>
   
